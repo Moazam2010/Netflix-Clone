@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ff0000;
+    font-size: 14px;
+}
+body{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 1vw + 0.8rem;
+    font-family:'Segoe UI', sans-serif;     
+    background-color: #f0f0f0;
+}
+
+/* Nav */
+
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background: linear-gradient(to bottom, #111111, rgb(58, 36, 44));
+}
+nav > img{
+    width: 15vw;
+}
+nav > button{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 50px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+nav > button:hover{
+    background-color: #b3b3b3;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 36, 44);
+}
+
+/* Section hero */
+
+.hero{
+    box-shadow: inset 0 -50px 80px gray;
+    height: fit-content;
+    width: 95%;
+    border-radius: 23px;
+    background-image: url('images/bg.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero > .content {
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: fit-content;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+}
+
+.hero > .content > h1 {
+    margin: 15vh 0 0 0;
+    width: 55vw;
+    letter-spacing: -3px;
+    line-height: clamp(3rem, 5vw, 5rem);
+    color: white;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+    opacity: 100%;
+}
+
+.hero > .content > .p1 {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.hero > .content > .p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20px 30px 10px;
+    color: white;
+    font-size: 1em;
+}
+.hero > .content > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 70px 0;
+}
+
+.hero > .content > form > input{
+    justify-self: start;
+    border-radius: 50px;
+    border: none;
+    min-width: 100px;
+    width: 36vw;
+    padding: 15px 10px;
+    font-size: 1em;
+    background-color: rgba(124, 124, 124, 0.844);
+    margin: 5px;
+}
+.hero > .content > form > input::placeholder{
+    color: rgb(219, 219, 219);
+    font-size: 1em;
+    font-family: "National Park", sans-serif;
+    font-weight: bold;
+}
+
+.hero > .content > form > button {
+    background-color: rgb(226, 11, 22);  
+    border: none;  
+    border-radius: 50px;
+    font-size: 1.4em;
+    color: white;
+    padding: 10px;
+    font-family: "National Park", sans-serif;
+    width: 25vw;
+    min-width: 120px;
+    transition: 0.3s;
+}
+.hero > .content > form > button:hover {
+    background-color: rgb(161, 2, 2);
+}
+
+
+/* Section ( Trending Now ) */
+
+.trending-now {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 80px 20px;
+}
+
+.trending-now > h2 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: rgb(202, 202, 202);
+}
+
+.trending-now > .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 50px 0; */
+    overflow: hidden;
+}
+
+.trending-now > .content > img {
+    margin: 18px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.trending-now > .content > img:hover {
+    transform: scale(1.05); 
+}
+
+/* Section ( More Reasons to Join ) */
+
+.more-reasons-to-join {
+    background: linear-gradient(to bottom, rgb(58, 36, 44), #0f0f0f,#0f0f0f,#0f0f0f,#0f0f0f);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 70px 20px;
+}
+.more-reasons-to-join > h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: white;
+}
+.more-reasons-to-join > .content {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the Cards */
+
+.more-reasons-to-join > .content > div {
+    min-width: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    height: 230px;
+    background-color: #adadad1f;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 5px;
+    border: 1px solid rgba(170, 170, 170, 0.219);
+    color: white;
+}
+.more-reasons-to-join > .content > div > h3{
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: white;
+    line-height: 17px;
+}
+.more-reasons-to-join > .content > div > p{
+    font-size: 0.95em;
+    color: white;
+    line-height: 17px;
+}
+.more-reasons-to-join > .content > div > .svg-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.more-reasons-to-join > .content > div > .svg-box > svg{
+    width: 5em;
+    margin: 0 0 0 auto;
+    padding: 0 10px;
+    fill: white;
+    transition: 0.3s;
+}
+
+/* Section ( FAQ ) */
+.FAQ {
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 0 70px 20px;
+}
+.FAQ > h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: white;
+}
+.FAQ > .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.FAQ > .content > div {
+    background-color: rgba(155, 155, 155, 0.164);
+    backdrop-filter: blur(5px);
+    height: 70px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 5px 0;
+    border: 1px solid rgba(170, 170, 170, 0.219);
+    padding: 20px;
+    color: white;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FAQ > .content > div:hover{
+    background-color: rgba(207, 207, 207, 0.26);
+    cursor: pointer;
+}
+.FAQ > .content > div > h2 {
+    font-size: 1.3em;
+    margin: 0;
+    color: white;
+}
+.FAQ > .content > div > i {
+    scale: 1.5;
+}
+
+/* Section ( sign up) */
+
+.sign-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px 20px;
+    background-color: #0f0f0f;
+}
+
+.sign-up > .p2 {
+    margin: 20px 0 10px 0;
+    color: white;
+    font-size: 1.2em;
+}
+.sign-up > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 70px 0;
+}
+.sign-up > form > input {
+    color: white;
+    justify-self: start;
+    border-radius: 50px;
+    border: none;
+    min-width: 100px;
+    width: 36vw;
+    padding: 15px 10px;
+    font-size: 1em;
+    background-color: rgba(124, 124, 124, 0.844);
+    margin: 5px;
+}
+.sign-up > form > input::placeholder {
+    color: rgb(219, 219, 219);
+    font-size: 1em;
+    font-family: "National Park", sans-serif;
+    font-weight: bold;
+}
+.sign-up > form > button {
+    background-color: rgb(226, 11, 22);  
+    border: none;  
+    border-radius: 50px;
+    font-size: 1.4em;
+    color: white;
+    padding: 10px;
+    font-family: "National Park", sans-serif;
+    width: 25vw;
+    min-width: 120px;
+    transition: 0.3s;
+}
+.sign-up > form > button:hover {
+    background-color: rgb(161, 2, 2);
+}
+
+/* FOOTER */
+
+footer{
+    padding: 0 80px;
+    width: 100%;
+    background-color: #0f0f0f;
+}
+footer > .pages {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 0;
+    height: 100%;
+}
+footer a {
+    color: rgb(180, 180, 180);
+    font-size: 1.2rem;
+}
+footer > select {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid gray;
+    background-color: #141414;
+    border-radius: 50px;
+    color: white;
+    padding: 5px 15px;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+footer > p {
+    color: rgb(180, 180, 180);
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+}
+
+/* Rules */
+
+@media (max-width: 870px ) {
+    :root{
+        font-size: 10px;
+    }
+    .hero > .content > form, .sign-up > form {
+        flex-wrap: wrap;
+    }
+    .more-reasons-to-join > .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .more-reasons-to-join > .content > div {
+        width: 90%;
+        height: 200px;
+    }
+    footer > .pages {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
